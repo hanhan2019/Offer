@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(reverseWords("I am a student."))
+	//fmt.Println(reverseWords("I am a student."))
 }
 func reverseWords(s string) string {
 	list := [][]byte{}
@@ -25,4 +25,8 @@ func reverseWords(s string) string {
 		result = append(result, []byte(" ")...)
 	}
 	return string(result)
+}
+
+func test(a *byte) {
+	fmt.Println(*a)
 }
